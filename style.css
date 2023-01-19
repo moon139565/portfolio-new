@@ -10,7 +10,7 @@
 body{
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
-    background-color: #b89b8b;
+    /* background-color: #b89b8b; */
     /* background-color: #C7C7D3; */
 }
 
@@ -20,6 +20,20 @@ body{
     color: #fff;
     font-size: 30px;
     font-weight: 700;
+}
+.logo img {
+    color: white;
+    height: 60px;
+    border-radius: 10%;
+}
+
+.header-area .nav-item-a ul li a:hover{
+    background-color: #B89B8B;
+    border-radius: 10px;
+}
+
+.header-area .nav-item-a ul li a:hover{
+    transition: 0.5s;
 }
 .header-area{
     /* background-color: #1E1E1E; */
@@ -37,9 +51,13 @@ body{
     margin-right: 0;
 }
 .header-area .navbar-nav .nav-item:last-child a{
-    border: 1px solid #ffffffa3;
+    /* border: 1px solid #ffffffa3; */
+    border: 1px solid #B89B8B;
     border-radius: 6px;
     padding: 10px 25px;
+}
+.header-area .navbar-nav .nav-item:last-child a:hover{
+    border: none;
 }
 .header-area .nav-link,
 .header-area .nav-link.active{
@@ -51,6 +69,7 @@ body{
 .Hero-area{
     min-height: calc(100vh - 85px);
     padding: 100px 0;
+    background-color: #b89b8b;
 }
 .hero-text{
     line-height: 2em;
@@ -62,7 +81,8 @@ body{
     font-weight: 800;
 }
 .hero-text h4 span{
-    background-color: aqua;
+    background-color: #392B28;
+    color: #ffffffe8;
     padding:5px 10px;
     border-radius: 5px;
     margin-right: 5px;
@@ -71,21 +91,56 @@ body{
     font-size: 56px;
     font-weight: 700;
     margin: 25px 0;
-    letter-spacing: 0.2em;
+    color: #392B28;
+    /* letter-spacing: 0.2em; */
 }
 .hero-text p{
     margin: 20px 0;
+    color: #392B28;
 }
 .hero-text a{
     text-decoration: none;
-    background-color: aqua;
+    background-color: #264067;
     padding: 10px 25px;
-    border-radius: 5px;
+    border-radius: 5px 15px;
     transition: 0.5s;
-    color: black;
+    color: #ffffffe8;
     font-size: 18px;
 }
 .hero-text a:hover{
-    background-color: #264067;
+    background-color: #392b28;
     color: #fff;
+}
+
+/* service code start */
+.all-service{
+    margin-top: 50px;
+    margin-bottom: 100px;
+    text-align: center;
+}
+.single-service{
+    /* border: 2px solid #B89B8B; */
+    padding: 15px;
+    box-shadow: #B89B8B 0px 5px 15px;
+    transition: 0.5s;
+}
+.single-service i{
+    font-size: 45px;
+    margin-top: 15px;
+}
+.single-service h3{
+    margin: 15px 0;
+}
+.single-service p{
+    text-align: justify;
+}
+.single-service:hover{
+    box-shadow: #B89B8B 0px 54px 55px, #B89B8B 0px -12px 30px, #B89B8B 0px 4px 6px, #B89B8B 0px 12px 13px, #B89B8B 0px -3px 5px;
+}
+.service-text h3{
+    text-align: center;
+    margin-top: 50px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 40px;
 }
