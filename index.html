@@ -6,6 +6,20 @@
     <title>Protfolio</title>
     <!-- fontawesome link -->
     <script src="https://kit.fontawesome.com/57b35d1a12.js" crossorigin="anonymous"></script>
+
+
+    <!-- emailjs -->
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("vdWpjsEJJbBs5a582");
+    })();
+</script>
+
+
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="./style.css">
   </head>
@@ -50,7 +64,7 @@
             <div class="col-lg-6 d-flex align-items-center">
               <div class="hero-text">
                 <h4><span>Hello</span>I'M</h4>
-                <h2>Mr. MooN</h2>
+                <h2>Mr<span>.</span> M<span class="oo-cl">oo</span>N</h2>
                 <!-- <h3>Front-End Devloper</h3> -->
                 <p>Front-End Developer Over the past 2 years, i've <br> worked with freelancing marketplace.</p>
                 <a href="#">Contact-Me</a>
@@ -66,41 +80,179 @@
         </div>                             
     </section>
     <!-- Service section -->
-    <section class="service">
+    <section class="service-area">
       <div class="container">
-        <div class="row">
-          <div class="service-text">
-            <h3>My-service</h3>
-          </div>
-          <div class="all-service d-flex">
-            
-            <div class="single-service col-lg-3 offset-lg-1">
-              <i class="fas fa-laptop-code"></i>
-              <h3>Web Development</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis qui in soluta cum ducimus corporis sed perferendis dolorum! Placeat quisquam labore,</p>
+        <div class="row service-row">
+            <h2>My-service</h2>
+            <div class="col-lg-3">
+              <div class="single-service text-white">
+                <i class="fas fa-laptop-code"></i>
+                <h3>Programming</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis qui in soluta cum ducimus corporis sed perferendis dolorum! Placeat quisquam labore,</p>
+              </div>
             </div>
-            <div class="single-service col-lg-3 offset-lg-1">
-              <i class="fas fa-images"></i>
-              <h3>Landing Page</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis qui in soluta cum ducimus corporis sed perferendis dolorum! Placeat quisquam labore</p>
+            <div class="col-lg-3">
+              <div class="single-service text-white">
+                <i class="fa-solid fa-dice-d20"></i>
+                <h3>Graphics</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis qui in soluta cum ducimus corporis sed perferendis dolorum! Placeat quisquam labore,</p>
+              </div>
             </div>
-            <div class="single-service offset-lg-1 col-lg-3">
-              <i class="fab fa-sketch"></i>
-              <h3>Graphic Design</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis qui in soluta cum ducimus corporis sed perferendis dolorum! Placeat quisquam labore</p>
+            <div class="col-lg-3 text-white">
+              <div class="single-service">
+                <i class="fa-brands fa-page4"></i>
+                <h3>Landing wb</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis qui in soluta cum ducimus corporis sed perferendis dolorum! Placeat quisquam labore,</p>
+              </div>
             </div>
-          </div>
+          
+
+
+
+
+
+
+
+
         </div>
+
       </div>
 
     </section>
+
+    <!-- project area -->
+    <div class="project-area">
+     <div class="container">
+      <h3 class="project-tex">My-Work</h3>
+      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./pic/work3.png" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>First slide label</h5>
+              <p>Some representative placeholder content for the first slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./pic/work2.png" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Second slide label</h5>
+              <p>Some representative placeholder content for the second slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./pic/work1.png" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Third slide label</h5>
+              <p>Some representative placeholder content for the third slide.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+     </div>
+    </div>
+
+    <!-- contact-area -->
+    <section class="contact-area">
+      <div class="container">
+        <div class="row contact-row">
+          <div class="col-lg-6">
+            <div class="contact-form">
+              <h3>Send Message</h3>
+              <input type="text" id="contactName" placeholder="Full Name" class="form-control mb-3">
+
+              <input type="email" id="contactemail" placeholder="Email" class="form-control mb-3">
+              <textarea id="contactmessage" placeholder="message" rows="5" class="form-control mb-3"></textarea>
+              <div id="erore-text"></div>
+              <button type="button" class="btn ms-auto" id="submitButton">Submit Now</button>
+            </div>
+          </div>
+          <div class="col-lg-5 offset-lg-1 d-flex align-items-center">
+            <div class="containt-text">
+              <div class="section-heading">
+                <h2 class="text-white">Contact Me</h2>
+                <p>A digital agency is a business you hire to outsource your digital marketing efforts, instead of handling in-house.</p>
+                <ul>
+                  <li><a href="#"><i class="fa-solid fa-map-location-dot"></i>Dupchanchia 5880, Bogura 5800</a></li>
+                </ul>
+                <ul>
+                  <li><a href="tel:01752745401"><i class="fa-solid fa-phone"></i>+88017xxxxxxxx</a></li>
+                </ul>
+                <ul>
+                  <li><a href="mailto:anika01839@gmail.com"><i class="fa-solid fa-envelope"></i>anika01839@gmail.com</a></li>
+                </ul>
+            </div>
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- <div class="row align-items-center">
+            <div class="main-form">
+              <h1>Contact Me</h1>
+              <div class="mb-4">
+                <label for="full-name" class="form-label">Full Name</label>
+                <input type="text" class="form-control" id="full-name" />
+              </div>
+              <div class="mb-4">
+                <label for="email-adress" class="form-label">Email Adress</label>
+                <input type="email" class="form-control" id="email-adress" />
+              </div>
+              <div class="mb-4">
+                <label for="message" class="form-label">Message</label>
+                <textarea name="message" id="message" rows="8" class="form-control"></textarea>
+                <div id="error-text"></div>
+              <div id="submited"></div>
+                <button type="submit" class="btn" id="contact-button">
+                  Submit
+                </button>
+              </div>
+            </div>
+        </div> -->
+      </div>
+    </section>
   </main>
-    
 
+  <!-- footer-area -->
+  <div class="footer-area">
+    <div class="container">
+      <div class="row">
+        <div class="sosal-link text-center">
+          <a href="https://github.com/moon139565" target="_blank"><i class="fa-brands fa-github"></i></a>  
+          <a href="https://www.linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="https://www.facebook.com/profile.php?id=100037056302239" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+        </div>
+        <p class="copy-text text-center">copyright © 2023 || Design with by moon</p>
+      </div>
+    </div>
+  </footer>
+  </div>
 
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 
-
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+ <script src="./script.js"></script>
   </body>
 </html>
