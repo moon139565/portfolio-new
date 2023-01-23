@@ -1,3 +1,15 @@
+// preloader code
+window.onload = function () {
+  const preloaderArea = document.getElementById("preloader-area");
+  preloaderArea.className = "page-loaded";
+  setTimeout(function () {
+    preloaderArea.style.display = "none";
+  }, 700);
+};
+
+
+
+// contact code
 let submitButton = document.getElementById("submitButton");
 
 submitButton.addEventListener("click", function(){

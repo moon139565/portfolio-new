@@ -106,5 +106,16 @@
             padding-left: 12px;
             /* width: 290px; */
         }
+        /* project code start */
+        span.carousel-control-prev-icon {
+            height: 30px;
+            width: 30px;
+            border-radius: 50%;
+        }
+        span.carousel-control-next-icon {
+            height: 30px;
+            width: 30px;
+            border-radius: 50%;
+        }
  }
 }
